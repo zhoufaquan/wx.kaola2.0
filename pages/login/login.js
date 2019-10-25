@@ -21,7 +21,9 @@ Page({
 
   //我用按钮绑定了一个向服务器发起请求的时间
   loginBtn: function (e) {
-   
+   wx.switchTab({
+     url: '../index/index',
+   })
     if (this.data.c_telephone == '' || this.data.c_pwd == '') {
       wx.showToast({
         title: '信息未填写完',
